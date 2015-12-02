@@ -4,4 +4,8 @@
 - [two](two/README.md)
  - [test3](two/test3.md)
  - [test4](two/test4.md)
+ 
+- [three](three/README.md)
+ - [test5](three/test5.md)
+ - [test6](thre/test6.md)
 - [关于gitbook](gitbook.md)
