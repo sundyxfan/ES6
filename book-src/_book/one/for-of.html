@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>test2 | ES6展望未来</title>
+        <title>for-of | ES6展望未来</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.4.3">
@@ -32,7 +32,7 @@
     <link rel="next" href="../two/index.html" />
     
     
-    <link rel="prev" href="../one/test1.html" />
+    <link rel="prev" href="../one/index.html" />
     
 
         
@@ -40,7 +40,7 @@
     <body>
         
         
-    <div class="book" data-level="1.2" data-basepath=".." data-revision="Wed Dec 02 2015 16:56:10 GMT+0800 (CST)">
+    <div class="book" data-level="1.1" data-basepath=".." data-revision="Thu Dec 03 2015 17:33:21 GMT+0800 (CST)">
     
 
 <div class="book-summary">
@@ -80,38 +80,23 @@
                         
                             <b>1.</b>
                         
-                        one
+                        迭代器
                     </a>
             
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.1" data-path="one/test1.html">
+        <li class="chapter active" data-level="1.1" data-path="one/for-of.html">
             
                 
-                    <a href="../one/test1.html">
+                    <a href="../one/for-of.html">
                 
                         <i class="fa fa-check"></i>
                         
                             <b>1.1.</b>
                         
-                        test
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.2" data-path="one/test2.html">
-            
-                
-                    <a href="../one/test2.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.2.</b>
-                        
-                        test2
+                        for-of
                     </a>
             
             
@@ -204,10 +189,10 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="thre/test6.html">
+        <li class="chapter " data-level="3.2" data-path="three/test6.html">
             
                 
-                    <a href="../thre/test6.html">
+                    <a href="../three/test6.html">
                 
                         <i class="fa fa-check"></i>
                         
@@ -233,7 +218,7 @@
                         
                             <b>4.</b>
                         
-                        关于gitbook
+                        gitbook
                     </a>
             
             
@@ -345,9 +330,53 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h1 id="test2">test2</h1>
-<h2 id="test2-%E6%9B%B4%E6%96%B0">test2 &#x66F4;&#x65B0;</h2>
-
+                        <h1 id="for-of">for-of</h1>
+<h2 id="%E8%90%8C%E8%8A%BD%E6%97%B6%E4%BB%A3">&#x840C;&#x82BD;&#x65F6;&#x4EE3;</h2>
+<ul>
+<li>&#x904D;&#x5386;&#x6570;&#x7EC4;</li>
+</ul>
+<pre><code>for (var i = 0; i &lt; array.length; i++) {
+    //TODO
+    array[i]
+}
+</code></pre><h2 id="es5%E6%97%B6%E4%BB%A3">es5&#x65F6;&#x4EE3;</h2>
+<pre><code>array.forEach(function(value) {
+    //TODO
+    value
+});
+</code></pre><blockquote>
+<p>&#x7B80;&#x6D01; </p>
+<p>&#x4E0D;&#x80FD;&#x4F7F;&#x7528;break &#x548C; return &#x8BED;&#x53E5;&#x8FD4;&#x56DE;&#x5230;&#x5916;&#x5C42;&#x51FD;&#x6570;</p>
+</blockquote>
+<h2 id="for-in">for-in</h2>
+<pre><code>for (var index in [&apos;aa&apos;, &apos;bb&apos;, &apos;cc&apos;]) {
+    index // &apos;1&apos;, &apos;2&apos;
+}
+</code></pre><blockquote>
+<p>index &#x503C;&#x662F;&#x5B57;&#x7B26;&#x4E32; 
+&#x4EE3;&#x7801;&#x6309;&#x968F;&#x673A;&#x987A;&#x5E8F;&#x904D;&#x5386; 
+&#x9002;&#x7528;&#x5BF9;&#x8C61;&#x904D;&#x5386;</p>
+</blockquote>
+<h2 id="es6">es6</h2>
+<pre><code>for (var value of array) {
+    // TODO
+    value
+}
+</code></pre><pre><code>for (var [key, value] of array) {
+    // TODO
+    key 
+    value
+}
+</code></pre><blockquote>
+<p>&#x7B80;&#x6D01;</p>
+<p>&#x907F;&#x5F00;for-in&#x7F3A;&#x9677; </p>
+<p>&#x6B63;&#x5E38;&#x54CD;&#x5E94; break&#x3001;continue&#x3001;return </p>
+<p>&#x4E5F;&#x53EF;&#x4EE5;&#x904D;&#x5386;&#x5B57;&#x7B26;&#x4E32;</p>
+</blockquote>
+<pre><code>for (var chr of  &apos;sdfsdf&apos;) {
+    chr
+}
+</code></pre>
                     
                     </section>
                 
@@ -357,7 +386,7 @@
         </div>
 
         
-        <a href="../one/test1.html" class="navigation navigation-prev " aria-label="Previous page: test"><i class="fa fa-angle-left"></i></a>
+        <a href="../one/index.html" class="navigation navigation-prev " aria-label="Previous page: 迭代器"><i class="fa fa-angle-left"></i></a>
         
         
         <a href="../two/index.html" class="navigation navigation-next " aria-label="Next page: two"><i class="fa fa-angle-right"></i></a>
